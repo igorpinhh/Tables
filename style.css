@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+.container {
+	width: 100%;
+	padding: 50px;
+	height: 80vh;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+
+.group {
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	position: fixed;
+}
+
+#num {
+    border: 2px solid #F55252;
+    background: rgba(245, 82, 82, 0.3);
+    border-radius: 2px;
+    font-size: 16px;
+    color: white;
+    padding: 12px;
+    margin:  0;
+    outline: none;
+}
+
+#num::placeholder {
+	color: rgba(245, 82, 82, 0.6);
+	font-size: 18px;
+}
+
+button {
+    width: 100px;
+    height: 46px;
+    font-size: 22px;
+    color: white;
+    border: none;
+    background: #F55252;
+    padding: 10px 10px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+button:hover {
+	transition: all 200ms ease-out;
+	transform: scale(1.2)
+}
+
+
+#allNumbers {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	position: relative;
+	top: 50px;
+}
+
+.row {
+	margin: 20px;
+}
+
+.number {
+	color: white;
+	border: 1px solid #E7E7E7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	background: rgba(245, 82, 82, 0.9);
+}
+
+.firstNumb {
+	color: #8B8B8B;
+	font-weight: 800;
+	background: white;
+}
